@@ -1,32 +1,38 @@
 {
-  "name": "jswebm",
-  "version": "0.1.2",
-  "keywords": [
-    "webm",
-    "ogv.js",
-    "jscodec",
-    "jsvpx"
-  ],
-  "scripts": {
-    "test": "jest test/",
-    "lint": "eslint src",
-    "build": "webpack --config webpack.config.js"
-  },
-  "author": "Brian Parra",
-  "contributors": [],
-  "license": "MIT",
-  "main": "dist/JsWebm.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jscodec/jswebm"
-  },
-  "devDependencies": {
-    "eslint": "^8.4.1",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.3",
-    "jest": "^27.4.3",
-    "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1"
-  },
-  "dependencies": {}
+    "name": "tswebm",
+    "version": "0.1.2",
+    "keywords": [
+        "webm",
+        "ogv.js",
+        "jscodec",
+        "jsvpx"
+    ],
+    "scripts": {
+        "test": "jest",
+        "lint": "eslint src",
+        "build": "rollup -c rollup.config.js --bundleConfigAsCjs"
+    },
+    "author": "Oleksii Lytvynenko",
+    "contributors": [],
+    "license": "MIT",
+    "main": "dist/tswebm.js",
+    "types": "dist/tswebm.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/olitvinenko/tswebm"
+    },
+    "devDependencies": {
+        "@rollup/plugin-typescript": "^11.1.5",
+        "@types/jest": "^29.4.0",
+        "@typescript-eslint/eslint-plugin": "^6.13.1",
+        "eslint": "^8.54.0",
+        "jest": "^29.4.3",
+        "rollup": "^4.6.1",
+        "rollup-plugin-delete": "^2.0.0",
+        "rollup-plugin-dts": "^6.1.0",
+        "ts-jest": "^29.0.5",
+        "ts-loader": "^9.5.1",
+        "tslib": "^2.6.2",
+        "typescript": "^5.3.2"
+    }
 }

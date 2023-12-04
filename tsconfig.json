@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "noEmitOnError": true,
+        "strict": true,
+        "target": "ES2016",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "esModuleInterop": true
+    },
+    "include": ["./src/**/*"]
+}
